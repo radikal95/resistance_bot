@@ -18,3 +18,11 @@ def default_answer(message):
     print(message.chat.id)
     bot.send_message(message.chat.id, "Pay {} coins.".format(random.randint(10, 99)))
     pass
+
+while True:
+    # bot.polling(none_stop=True)
+    try:
+        bot.polling(none_stop=True)
+    except Exception as e:
+        logging.error(e)
+        time.sleep(15)
