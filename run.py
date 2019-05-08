@@ -22,5 +22,5 @@ pass
 @bot.message_handler(content_types='text')
 def default_answer(message):
     print(message.chat.id)
-    bot.send_message(message.chat.id, "Шифрограмма принята. С вас {} копеек.".format(random.randint(10, 99)))
+    bot.send_message(message.chat.id, "Pay {} coins.".format(random.randint(10, 99)))
     pass
