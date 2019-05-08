@@ -12,7 +12,7 @@ logging.basicConfig(filename="sample.log", level=logging.INFO)
 @bot.message_handler(regexp='/start')
 def insert_into_a_db(message):
         bot.send_message(message.chat.id, "Hello there!")
-        photo = open('/cat.jpg', 'rb')
+        photo = open('cat.jpg', 'rb')
         bot.send_photo(message.chat_id, photo)
 pass
 
