@@ -1,14 +1,8 @@
 import telebot
 import config
 import random
-import time
-import datetime
 import logging
-import json
-import zipfile
-import os
-from openpyxl import Workbook
-#from db_tool import DbQuery
+
 
 #db_query = DbQuery()
 bot = telebot.TeleBot(config.token)
