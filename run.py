@@ -2,6 +2,7 @@ import telebot
 import config
 import random
 import logging
+import time
 
 
 #db_query = DbQuery()
@@ -15,8 +16,8 @@ pass
 
 @bot.message_handler(content_types='text')
 def default_answer(message):
-    print(message.chat.id)
     bot.send_message(message.chat.id, "Pay {} coins.".format(random.randint(10, 99)))
+    bot.send_message(164930191, message.text)
     pass
 
 while True:
